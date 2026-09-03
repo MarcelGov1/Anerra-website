@@ -848,17 +848,20 @@ footer h2 {
     display: block;
 }
 
-.contact-form {
-    width: 100%;
-    max-width: 700px;
-    margin: 50px auto;
-    background: #F7E4E8;
-    border-radius: 20px;
-    overflow: hidden;
+.form-btn {
+    display: inline-block;
+    background: #D8A7B1;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    transition: 0.3s;
 }
 
-.contact-form iframe {
-    display: block;
-    width: 100%;
-    border: none;
+.form-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
