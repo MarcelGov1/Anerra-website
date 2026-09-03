@@ -848,3 +848,17 @@ footer h2 {
     display: block;
 }
 
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    background: #F7E4E8;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact-form iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
