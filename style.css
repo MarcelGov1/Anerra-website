@@ -836,9 +836,15 @@ footer h2 {
     }
 
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    width: 120px;
-    height: auto;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
     display: block;
 }
 
