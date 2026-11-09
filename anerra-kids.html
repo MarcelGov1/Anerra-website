@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ANERRA Kids | Colouring Books</title>
+
+    <meta name="description" content="Discover ANERRA Kids colouring books. Creative, colourful and meaningful books for little ones.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: #fbf7ef;
+            color: #603d3d;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .kids-hero {
+            text-align: center;
+            padding: 85px 20px 55px;
+            background: linear-gradient(135deg, #f9e8e5, #fbf7ef);
+        }
+
+        .kids-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(38px, 6vw, 58px);
+            color: #76263d;
+            margin-bottom: 15px;
+        }
+
+        .kids-hero p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .kids-label {
+            color: #a53d59;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .books-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 65px 20px;
+        }
+
+        .books-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .books-heading h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #76263d;
+        }
+
+        .book-card {
+            background: #fffdf9;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 28px rgba(118, 38, 61, 0.08);
+            border: 1px solid #f0dfdc;
+        }
+
+        .book-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 27px;
+            color: #76263d;
+            text-align: center;
+            margin: 5px 0 12px;
+        }
+
+        .book-description {
+            text-align: center;
+            line-height: 1.7;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .book-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .book-gallery img {
+            width: 100%;
+            height: 390px;
+            object-fit: cover;
+            border-radius: 12px;
+            background: #f4e5e1;
+        }
+
+        .photo-placeholder {
+            min-height: 250px;
+            border: 2px dashed #d9a8ae;
+            border-radius: 12px;
+            background: #fbf0ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: #a53d59;
+        }
+
+        .enquire-button {
+            display: block;
+            width: fit-content;
+            margin: 28px auto 5px;
+            background: #a53d59;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .enquire-button:hover {
+            background: #76263d;
+            transform: translateY(-2px);
+        }
+
+        .delivery-note {
+            text-align: center;
+            background: #f7e9e6;
+            padding: 30px 20px;
+            border-radius: 14px;
+            margin: 40px auto 0;
+            max-width: 750px;
+            line-height: 1.8;
+        }
+
+        .delivery-note h3 {
+            font-family: 'Playfair Display', serif;
+            color: #76263d;
+        }
+
+        @media(max-width: 600px) {
+            .book-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .book-gallery img {
+                height: auto;
+                max-height: 480px;
+                object-fit: contain;
+            }
+
+            .book-card {
+                padding: 18px;
+            }
+
+            .kids-hero {
+                padding: 60px 18px 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div style="text-align:center; padding:20px;">
+        <a href="index.html" style="text-decoration:none; color:#76263d;">
+            <span style="font-family:'Playfair Display',serif; font-size:30px;">
+                ANERRA
+            </span>
+        </a>
+        <p style="margin:3px 0; letter-spacing:2px; font-size:11px;">
+            MADE FOR YOU, BY YOU.
+        </p>
+    </div>
+</header>
+
+<main>
+
+    <section class="kids-hero">
+        <span class="kids-label">A little creativity goes a long way</span>
+
+        <h1>Welcome to ANERRA Kids</h1>
+
+        <p>
+            A special little corner for curious minds, colourful
+            imaginations and creative adventures. Explore our
+            colouring books, created to inspire little artists.
+        </p>
+    </section>
+
+    <section class="books-section">
+
+        <div class="books-heading">
+            <span class="kids-label">Explore our collection</span>
+            <h2>Our Colouring Books</h2>
+            <p>Discover something special for your little one.</p>
+        </div>
+
+        <!-- BOOK ONE -->
+
+        <article class="book-card">
+
+            <h3>My First Book of Devas</h3>
+
+            <p class="book-description">
+                Introduce little ones to a beautiful world of
+                imagination, creativity and meaningful stories
+                through colouring.
+            </p>
+
+            <div class="book-gallery">
+                <img src="images/devas-book-1.jpg"
+                     alt="My First Book of Devas - photograph one">
+
+                <img src="images/devas-book-2.jpg"
+                     alt="My First Book of Devas - photograph two">
+            </div>
+
+            <a class="enquire-button"
+               href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20My%20First%20Book%20of%20Devas.">
+                Enquire on WhatsApp
+            </a>
+
+        </article>
+
+        <!-- BOOK TWO -->
+
+        <article class="book-card">
+
+            <h3>Our Second Colouring Book</h3>
+
+            <p class="book-description">
+                Another creative adventure is waiting!
+                Contact us to discover more about this colouring book.
+            </p>
+
+            <div class="book-gallery">
+
+                <div class="photo-placeholder">
+                    Second book photograph 1<br>
+                    Add your image here
+                </div>
+
+                <div class="photo-placeholder">
+                    Second book photograph 2<br>
+                    Add your image here
+                </div>
+
+            </div>
+
+            <a class="enquire-button"
+               href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20your%20second%20colouring%20book.">
+                Enquire on WhatsApp
+            </a>
+
+        </article>
+
+        <div class="delivery-note">
+            <h3>Interested in purchasing?</h3>
+
+            <p>
+                Message us on WhatsApp for pricing and payment details.
+                Our team will gladly assist you with your order.
+            </p>
+
+            <p>
+                <strong>Please note:</strong> Additional courier or
+                delivery charges may apply.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer style="text-align:center; padding:30px 15px; background:#76263d; color:#fff;">
+    <p style="font-family:'Playfair Display',serif; font-size:23px;">
+        ANERRA
+    </p>
+
+    <p>Made for you, by you.</p>
+
+    <p style="font-size:12px;">
+        © 2026 ANERRA. All rights reserved.
+    </p>
+
+    <a href="index.html" style="color:#fff;">
+        Return to Main Website
+    </a>
+</footer>
+
+</body>
+</html>
