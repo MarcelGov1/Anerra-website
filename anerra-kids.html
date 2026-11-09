@@ -1,177 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ANERRA Kids | Colouring Books</title>
+    <title>ANERRA Kids | Made for You, by You</title>
 
-    <meta name="description" content="Explore ANERRA Kids colouring books. Creative and meaningful colouring adventures for little ones.">
+    <meta name="description"
+          content="Discover ANERRA Kids colouring books. Creative colouring adventures for little ones.">
 
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background: #fbf7ef;
-            color: #603d3d;
-            font-family: 'DM Sans', sans-serif;
-            margin: 0;
-        }
-
-        .kids-hero {
-            text-align: center;
-            padding: 85px 20px 65px;
-            background: linear-gradient(135deg, #f9e8e5, #fbf7ef);
-        }
-
-        .kids-hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(38px, 6vw, 58px);
-            color: #76263d;
-            margin: 15px 0;
-        }
-
-        .kids-hero p {
-            max-width: 650px;
-            margin: auto;
-            line-height: 1.8;
-        }
-
-        .kids-label {
-            color: #a53d59;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 12px;
-            font-weight: 700;
-        }
-
-        .books-section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 65px 20px;
-        }
-
-        .books-heading {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .books-heading h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            color: #76263d;
-        }
-
-        .book-card {
-            background: #fffdf9;
-            border-radius: 18px;
-            padding: 30px;
-            margin-bottom: 35px;
-            box-shadow: 0 8px 28px rgba(118, 38, 61, 0.08);
-            border: 1px solid #f0dfdc;
-        }
-
-        .book-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: #76263d;
-            text-align: center;
-        }
-
-        .book-description {
-            text-align: center;
-            line-height: 1.8;
-            max-width: 650px;
-            margin: 0 auto 25px;
-        }
-
-        .book-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .book-gallery img {
-            width: 100%;
-            height: 400px;
-            object-fit: contain;
-            background: #f9eee9;
-            border-radius: 12px;
-        }
-
-        .enquire-button {
-            display: block;
-            width: fit-content;
-            margin: 28px auto 5px;
-            background: #a53d59;
-            color: white;
-            text-decoration: none;
-            padding: 14px 30px;
-            border-radius: 30px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
-
-        .enquire-button:hover {
-            background: #76263d;
-            transform: translateY(-2px);
-        }
-
-        .delivery-note {
-            text-align: center;
-            background: #f7e9e6;
-            padding: 35px 20px;
-            border-radius: 14px;
-            margin: 45px auto 0;
-            max-width: 750px;
-            line-height: 1.8;
-        }
-
-        .delivery-note h3 {
-            font-family: 'Playfair Display', serif;
-            color: #76263d;
-            font-size: 26px;
-        }
-
-        .kids-footer {
-            text-align: center;
-            padding: 35px 15px;
-            background: #76263d;
-            color: white;
-        }
-
-        .kids-footer a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        @media(max-width: 600px) {
-            .book-gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .book-gallery img {
-                height: auto;
-                max-height: 480px;
-            }
-
-            .book-card {
-                padding: 18px;
-            }
-
-            .kids-hero {
-                padding: 60px 18px;
-            }
-
-            .books-heading h2 {
-                font-size: 30px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -179,159 +18,232 @@
 <!-- HEADER -->
 
 <header>
-    <div style="text-align:center; padding:20px;">
-        <a href="index.html" style="text-decoration:none; color:#76263d;">
-            <span style="font-family:'Playfair Display',serif; font-size:32px;">
-                ANERRA
-            </span>
-        </a>
 
-        <p style="margin:3px 0; letter-spacing:2px; font-size:11px;">
-            MADE FOR YOU, BY YOU.
-        </p>
-    </div>
+    <a href="index.html" class="logo">
+        ANERRA
+    </a>
+
+    <button class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Open navigation menu">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Collections</a>
+        <a href="anerra-kids.html">ANERRA Kids</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
 </header>
 
-<!-- HERO -->
 
 <main>
 
-<section class="kids-hero">
+    <!-- HERO SECTION -->
 
-    <span class="kids-label">Creativity starts here</span>
+    <section class="kids-hero">
 
-    <h1>Welcome to ANERRA Kids</h1>
+        <div class="kids-hero-content">
 
-    <p>
-        A little space for big imaginations!
-        Discover our colouring books, created to inspire
-        creativity, learning and colourful adventures.
-    </p>
+            <p class="section-title">
+                CREATIVITY STARTS HERE
+            </p>
 
-</section>
+            <h1>ANERRA Kids</h1>
 
-<!-- BOOK COLLECTION -->
+            <h2>Little Hands, Big Imaginations</h2>
 
-<section class="books-section">
-
-    <div class="books-heading">
-
-        <span class="kids-label">Our collection</span>
-
-        <h2>Colour, Create & Explore</h2>
-
-        <p>Find a special colouring book for your little one.</p>
-
-    </div>
-
-    <!-- BOOK ONE -->
-
-    <article class="book-card">
-
-        <h3>My First Book of Devas</h3>
-
-        <p class="book-description">
-            Discover a beautiful world of creativity and
-            imagination with My First Book of Devas.
-            A colouring adventure for little artists.
-        </p>
-
-        <div class="book-gallery">
-
-            <img
-                src="images/Devascoverpage1.jpg"
-                alt="My First Book of Devas ">
-
-            <img
-                src="images/Devascoverpage2.jpg"
-                alt="My First Book of Devas ">
+            <p>
+                A special little corner for curious minds,
+                colourful imaginations and creative adventures.
+                Discover our colouring books, made to inspire
+                little artists.
+            </p>
 
         </div>
 
-        <a class="enquire-button"
-           href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20My%20First%20Book%20of%20Devas.">
-            Enquire on WhatsApp
-        </a>
+    </section>
 
-    </article>
 
-    <!-- BOOK TWO -->
+    <!-- BOOK COLLECTION -->
 
-    <article class="book-card">
+    <section class="kids-collection">
 
-        <h3>My First Book of Devis</h3>
+        <div class="kids-heading">
 
-        <p class="book-description">
-            Explore another colourful adventure with
-            My First Book of Devis. Let little imaginations
-            grow through creativity and colouring.
-        </p>
+            <p class="section-title">
+                MADE FOR LITTLE CREATORS
+            </p>
 
-        <div class="book-gallery">
+            <h2>Colour, Create & Explore</h2>
 
-            <img
-                src="images/Deviscoverpage1.jpg"
-                alt="My First Book of Devis">
-
-            <img
-                src="images/Deviscoverpage2.jpg"
-                alt="My First Book of Devis">
+            <p>
+                Discover our colouring book collection and
+                let your little one's imagination bloom.
+            </p>
 
         </div>
 
-        <a class="enquire-button"
-           href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20My%20First%20Book%20of%20Devis.">
-            Enquire on WhatsApp
-        </a>
 
-    </article>
+        <!-- DEVAS BOOK -->
+
+        <article class="kids-book">
+
+            <div class="kids-book-info">
+
+                <p class="section-title">
+                    BOOK ONE
+                </p>
+
+                <h3>My First Book of Devas</h3>
+
+                <p>
+                    Discover a beautiful world of creativity
+                    and imagination with My First Book of Devas.
+                    A colouring adventure for little artists.
+                </p>
+
+                <p>
+                    Interested in this book? Contact us directly
+                    for pricing and payment information.
+                </p>
+
+                <a class="kids-enquire"
+                   href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20My%20First%20Book%20of%20Devas.">
+
+                    Enquire About This Book
+
+                </a>
+
+            </div>
+
+
+            <div class="kids-gallery">
+
+                <img src="images/Devascoverpage1.jpg"
+                     alt="My First Book of Devas cover">
+
+                <img src="images/Devascoverpage2.jpg"
+                     alt="My First Book of Devas second photograph">
+
+            </div>
+
+        </article>
+
+
+        <!-- DEVIS BOOK -->
+
+        <article class="kids-book">
+
+            <div class="kids-book-info">
+
+                <p class="section-title">
+                    BOOK TWO
+                </p>
+
+                <h3>My First Book of Devis</h3>
+
+                <p>
+                    Explore another colourful adventure with
+                    My First Book of Devis. Let little
+                    imaginations grow through creativity
+                    and colouring.
+                </p>
+
+                <p>
+                    Contact ANERRA to find out more about
+                    this colouring book and how to order.
+                </p>
+
+                <a class="kids-enquire"
+                   href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20My%20First%20Book%20of%20Devis.">
+
+                    Enquire About This Book
+
+                </a>
+
+            </div>
+
+
+            <div class="kids-gallery">
+
+                <img src="images/Deviscoverpage1.jpg"
+                     alt="My First Book of Devis cover">
+
+                <img src="images/Deviscoverpage2.jpg"
+                     alt="My First Book of Devis second photograph">
+
+            </div>
+
+        </article>
+
+    </section>
+
 
     <!-- ORDER INFORMATION -->
 
-    <div class="delivery-note">
+    <section class="kids-delivery">
 
-        <h3>Interested in placing an order?</h3>
+        <p class="section-title light">
+            YOUR NEXT CREATIVE ADVENTURE
+        </p>
+
+        <h2>Ready to Order?</h2>
 
         <p>
-            Contact us on WhatsApp to enquire about pricing
-            and receive your payment details.
+            Send us a WhatsApp message to enquire about
+            book prices and receive your payment details.
+            We'll gladly assist you with your order.
         </p>
 
         <p>
-            Our team will gladly assist you with your order.
+            Please note that additional courier or
+            delivery charges may apply.
         </p>
 
-        <p>
-            <strong>Please note:</strong>
-            Additional courier or delivery charges may apply.
-        </p>
-
-        <a class="enquire-button"
+        <a class="kids-enquire"
            href="https://wa.me/27671051304?text=Hello%20ANERRA!%20I%20would%20like%20to%20enquire%20about%20ANERRA%20Kids.">
+
             Contact ANERRA
+
         </a>
 
-    </div>
-
-</section>
+    </section>
 
 </main>
 
+
 <!-- FOOTER -->
 
-<footer class="kids-footer">
+<footer>
 
-    <h2 style="font-family:'Playfair Display',serif;">
-        ANERRA
-    </h2>
+    <h2>ANERRA</h2>
 
-    <p>Made for you, by you.</p>
+    <p class="footer-slogan">
+        Made for you, by you.
+    </p>
 
-    <p>© 2026 ANERRA. All rights reserved.</p>
+    <p>
+        Data-free creativity, made with love.
+    </p>
 
-    <a href="index.html">Return to Main Website</a>
+    <p class="copyright">
+        ANERRA | © 2026 All rights reserved.
+    </p>
+
+    <a href="index.html"
+       style="color:white; text-decoration:none;">
+
+        Return to Main Website
+
+    </a>
 
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
