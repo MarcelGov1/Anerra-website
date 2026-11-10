@@ -1348,3 +1348,34 @@ footer h2 {
     gap: 15px;
   }
 }
+
+.kids-seo-content {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 35px;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.9;
+}
+
+.kids-seo-content h2,
+.kids-seo-content h3 {
+  color: var(--rose);
+}
+
+.kids-seo-content h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.kids-seo-content h3 {
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+  .kids-seo-content {
+    padding: 25px 18px;
+    margin: 30px auto;
+  }
+}
