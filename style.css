@@ -1293,3 +1293,58 @@ footer h2 {
         padding: 70px 20px;
     }
 }
+
+.kids-intro {
+  max-width: 850px;
+  margin: 20px auto 35px;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.kids-deity-intro {
+  max-width: 950px;
+  margin: 35px auto 55px;
+  padding: 35px;
+  background: var(--pink-light);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.kids-deity-intro h2 {
+  color: var(--rose);
+  margin-bottom: 15px;
+}
+
+.kids-deity-intro > p {
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+.deity-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+}
+
+.deity-columns h3 {
+  color: var(--rose-dark);
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 10px;
+}
+
+.deity-columns ul {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+@media (max-width: 650px) {
+  .kids-deity-intro {
+    padding: 25px 18px;
+  }
+
+  .deity-columns {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
